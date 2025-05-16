@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yuk Belajar CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="css-icon.png" type="image/png">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Contoh Materi CSS</h1>
+    <button id="toggle-dark" class="dark-toggle">Dark Mode</button>
+  </header>
+
+  <!-- BOX MODEL -->
+  <section>
+    <h2>1. Box Model</h2>
+    <div class="box-model">
+      Ini contoh Box Model. Ada padding, border, dan margin.
+    </div>
+  </section>
+
+  <!-- POSITIONING -->
+  <section>
+    <h2>2. Positioning</h2>
+    <div class="positioning-container">
+      <div class="positioned-box">Posisi Absolut</div>
+    </div>
+  </section>
+
+  <!-- DISPLAY DAN LAYOUT -->
+  <section>
+    <h2>3. Display dan Layout</h2>
+    <div class="inline-box">Box 1</div>
+    <div class="inline-box">Box 2</div>
+  </section>
+
+  <!-- FLEXBOX -->
+  <section>
+    <h2>4. Flexbox</h2>
+    <div class="flex-container">
+      <div class="flex-item">Flex 1</div>
+      <div class="flex-item">Flex 2</div>
+      <div class="flex-item">Flex 3</div>
+    </div>
+  </section>
+
+  <!-- CSS GRID -->
+  <section>
+    <h2>5. CSS Grid</h2>
+    <div class="grid-container">
+      <div class="grid-item">Grid 1</div>
+      <div class="grid-item">Grid 2</div>
+      <div class="grid-item">Grid 3</div>
+    </div>
+  </section>
+
+  <!-- RESPONSIVE DESIGN -->
+  <section>
+    <h2>6. Responsive Design</h2>
+    <div class="responsive-box">
+      Ubah ukuran jendela browser untuk melihat perubahan warna!
+    </div>
+  </section>
+
+  <!-- TRANSFORMASI DAN ANIMASI -->
+  <section>
+    <h2>7. Transformasi dan Animasi</h2>
+    <div class="animated-box"></div>
+  </section>
+
+  <!-- Script JS -->
+  <script>
+    const toggleBtn = document.getElementById("toggle-dark");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      toggleBtn.textContent = body.classList.contains("dark-mode")
+        ? "Light Mode"
+        : "Dark Mode";
+    });
+  </script>
+</body>
+</html>
